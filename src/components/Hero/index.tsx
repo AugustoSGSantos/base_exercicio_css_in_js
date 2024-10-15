@@ -1,16 +1,12 @@
-import { Form, HeroTitle } from './Hero.module'
+import { Form, Container, HeroTitle } from './styles'
 
-type Props = {
-  trocaTema: () => void
-}
-
-const Hero = (props: Props) => (
+const Hero = () => (
   <Form>
-    <div className="container">
+    <Container>
       <HeroTitle>
         As melhores vagas para tecnologia, design e artes visuais.
       </HeroTitle>
-    </div>
+    </Container>
   </Form>
 )
 

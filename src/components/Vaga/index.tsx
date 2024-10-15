@@ -1,4 +1,4 @@
-import { VagaWrapper, VagaTitulo, VagaLink } from './Vaga.module'
+import { VagasContainer, VagasTitulo, VagasLink } from './styles'
 
 type Props = {
   titulo: string
@@ -11,21 +11,19 @@ type Props = {
 }
 
 const Vaga = (props: Props) => (
-  <VagaWrapper>
-    {' '}
-    {/* Alterado de Vaga para VagaWrapper */}
-    <VagaTitulo>{props.titulo}</VagaTitulo>
+  <VagasContainer>
+    <VagasTitulo>{props.titulo}</VagasTitulo>
     <ul>
-      <li>Localização: {props.localizacao}</li>
+      <li>Localizacao: {props.localizacao}</li>
       <li>Senioridade: {props.nivel}</li>
-      <li>Tipo de contratação: {props.modalidade}</li>
+      <li>Tipo de contratacao: {props.modalidade}</li>
       <li>
         Salário: {props.salarioMin} - {props.salarioMax}
       </li>
       <li>Requisitos: {props.requisitos.join(', ')}</li>
     </ul>
-    <VagaLink>Ver detalhes e candidatar-se</VagaLink>
-  </VagaWrapper>
+    <VagasLink>Ver detalhes e candidatar-se</VagasLink>
+  </VagasContainer>
 )
 
 export default Vaga
