@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const VagasContainer = styled.li`
+export const Lista = styled.li`
   border: 1px solid var(--cor-principal);
   background-color: var(--cor-secundaria);
   color: var(--cor-principal);
@@ -19,11 +19,12 @@ export const VagasContainer = styled.li`
     color: var(--cor-principal);
   }
 `
-export const VagasTitulo = styled.h3`
+export const Titulo3 = styled.h3`
   font-weight: bold;
   margin-bottom: 16px;
 `
-export const VagasLink = styled.a`
+
+export const VagaLink = styled.a`
   border-color: var(--cor-secundaria);
   background-color: var(--cor-principal);
   color: var(--cor-secundaria);

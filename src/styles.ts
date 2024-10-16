@@ -1,10 +1,11 @@
-import { createGlobalStyle } from 'styled-components'
+import styled, { createGlobalStyle } from 'styled-components'
 
-const EstiloGlobal = createGlobalStyle`
+const GlobalStyle = createGlobalStyle`
 :root {
   --cor-principal: #a7727d;
   --cor-secundaria: #f9f5e7;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -16,17 +17,15 @@ const EstiloGlobal = createGlobalStyle`
 body {
   padding-bottom: 120px;
 }
+`
+export default GlobalStyle
 
-.container {
+export const Container = styled.div`
   max-width: 1024px;
   width: 100%;
   margin: 0 auto;
-}
 
-@media (max-width: 1024px) {
-  .container {
+  @media (max-width: 1024px) {
     max-width: 80%;
   }
-}
 `
-export default EstiloGlobal
